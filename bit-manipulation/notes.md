@@ -33,6 +33,20 @@ print(result)  # Output: 20
 ```
 `5 << 2 = 20` (equivalent to `5 * 2^2` = 5 * 4 = 20).
 
+# Swap two numbers
+
+ a = 10
+ b = 12
+
+ O/p => a = 12 b = 10
+
+ - We can use XOR operator
+ - 10^10 = 0
+ - a = a ^ b
+ - b = a ^ b = a ^ b ^ b = a
+ - Thus, b = a
+ - a = a ^ b = a ^ b ^ b = a ^ b ^ a = b
+ - Thus, a = b
 
 # Unset the last set bit(rightmost)
 
