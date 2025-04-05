@@ -35,7 +35,7 @@ You can track your progress by checking off the topics I've completed in this re
 - [ ] Sorting Algorithms
 - [ ] Counting Sort / Radix Sort
 
-### 🧮 Mathematicsif nums[n-2] != n:
+### 🧮 Mathematics
 - [ ] GCD, LCM
 - [ ] Prime Numbers & Sieve
 - [ ] Modular Arithmetic
