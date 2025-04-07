@@ -70,3 +70,20 @@ The solution for this is `n|(n+1)`
 
 - The rightmost 0 in n is flipped to 1 in n + 1.
 - n | (n + 1) ensures that this bit is set to 1, without affecting higher bits.
+
+# Count the number set bits in an integer
+
+If we have a given number x, we can traverse each bit of this number and check if the given bit is set or not.
+
+- We can use bitwise & such that  by doing `x & (1<<i) ` we can determine if a given bit at that position is set or not.
+- If the result is `non-zero` than it is set else not set. 
+
+```python
+x = 3
+cnt = 0
+for i in range(0,31):
+    if (x & (1 << i)):
+        cnt= cnt+1
+
+return cnt
+```
