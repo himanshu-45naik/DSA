@@ -36,3 +36,13 @@
   - 2:5 --> 5 % N --> 5 % 5 = 0
   - 10:6 --> 6 % N  --> 6 % 5 = 1
  
+ **Approach 2**
+ # Approach -
+  - Hypothetically double the array.
+  - Start from the last element (from right to left) of the hypothetical array.
+  - If array is [2,1,3,4,3] than the hypothetical array would be [2,1,3,4,3,2,1,3,4,3]
+  - Start from index 9 i.e 3
+  - Create an empty monotonic stack. As we have to find the NGE of the actual array, 
+  - We will only add the intial hypothetical elements in the stack such that the top element is larger, if not than pop the elements.
+  - After the traversal of the hypothetical elements, we will find NGE of the elements of the actual array w.r.t the monotonic stack.
+  - Calculate index of the hypothetical element --> ind = i % n. (n = length of array) 
