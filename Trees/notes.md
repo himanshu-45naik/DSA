@@ -38,3 +38,10 @@ Inorder traversal follows the order: Left → Root → Right.
 ![Alt text](./inorder1.png)
 ![Alt text](./inorder2.png)
 ![Alt text](./inorder3.png)
+
+# Postorder
+
+# Level Order Traversal
+
+The level of traversal in a binary tree usually refers to how you visit the tree nodes level by level — that is, from top to bottom, left to right at each level.
+This concept is mainly used in level order traversal, which is a type of breadth-first search (BFS).
