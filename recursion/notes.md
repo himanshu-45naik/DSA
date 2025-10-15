@@ -36,7 +36,7 @@ class Solution:
 
 -------------------------------------------------------------------------------------------------
 
-## Combination sum 2
+## Combination sum 2 -- 39
 
 ### What does return actually do?
 ```python
@@ -70,3 +70,23 @@ def backtrack(start,sum):
     - i > start: Ensures that we are not at the very first element in the loop (for a given recursion level). We only want to skip duplicates after the first occurrence of a number.
 
     - candidates[i] == candidates[i - 1]: Checks if the current number is the same as the previous number in the sorted candidates list. If both conditions are true, it means we've already considered this number in the previous iteration of the loop **at the same level of the recursion**, so we skip it to avoid duplicate combinations.
+
+
+
+## Subset 2 - 90
+
+Why [2, 2] is Allowed:
+
+-    The condition if i > start and nums[i] == nums[i-1]: continue only skips duplicates at the same level of recursion.
+
+-    When generating [2, 2], the second 2 is added in a new recursive call, not at the same level as the first 2.
+
+-   Therefore, the condition does not prevent the second 2 from being added, and [2, 2] is a valid subset.
+
+Summary:
+
+-   The condition if i > start and nums[i] == nums[i-1]: continue ensures that duplicates are skipped at the same level of recursion.
+
+-  Subsets like [2, 2] are allowed because the second 2 is added in a new recursive call, not at the same level as the first 2.
+
+-    This ensures that all unique subsets, including those with duplicate elements, are generated correctly.
