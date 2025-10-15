@@ -24,7 +24,8 @@ class Solution:
                 if nums[ind] > nums[i]:
                     res[i] = nums[ind]
                     break
-        return res 
+        return res
 
         
-        # T
+        # Time complexity --> O(N^2)
+        # Space complexity --> O(N)
