@@ -24,7 +24,9 @@ class ProductOfNumbers:
             self.prefix_product.append(self.prefix_product[-1] * num)
 
     def getProduct(self, k: int) -> int:
-        if k >= len(self.prefix_product):  # If k exceeds stored products (meaning a 0 was added)
+        if k >= len(
+            self.prefix_product
+        ):  # If k exceeds stored products (meaning a 0 was added)
             return 0
         return self.prefix_product[-1] // self.prefix_product[-k - 1]
 
