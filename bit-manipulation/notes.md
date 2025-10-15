@@ -32,3 +32,27 @@ result = n << k  # Shift left by 2
 print(result)  # Output: 20
 ```
 `5 << 2 = 20` (equivalent to `5 * 2^2` = 5 * 4 = 20).
+
+
+# Unset the last set bit(rightmost)
+
+If the given number is n then,
+The solution for this is `n&(n-1)`
+
+- Subtracting 1 from n flips all bits after the rightmost set bit, including the rightmost 1 itself.
+- n     =  101010  (42 in decimal)
+- n - 1 =  101001  (41 in decimal)
+- Performing n & (n - 1) clears this rightmost 1 while keeping the other bits unchanged
+- n & (n - 1) = 101000  (40 in decimal)
+
+# Set the last unset bit(rightmost)
+
+If the given number is n then,
+The solution for this is `n|(n+1)`
+
+- n     =  100111  (39 in decimal)
+- n + 1 =  101000  (40 in decimal)
+- n | (n + 1) = 101111  (47 in decimal)
+
+- The rightmost 0 in n is flipped to 1 in n + 1.
+- n | (n + 1) ensures that this bit is set to 1, without affecting higher bits.
