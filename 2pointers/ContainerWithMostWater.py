@@ -9,14 +9,32 @@ class Solution:
         
         # Bruteforce Approach
         # Check for all walls, to built an intuition.
+        # contained = 0
+        # n = len(height)
+
+        # for i in range (n):
+        #     for j in range(i + 1, n):
+        #         smaller_wall = min(height[i], height[j])
+        #         contained = max(contained, (j - i) * smaller_wall) 
+
+        # return contained
+        # --------------------------------------------------------------------------- #
+
+        # Optimized
+        # Using two pointer solution for getting O(n) time complexity.
+        
         contained = 0
-        n = len(height)
+        l , r = 0, len(height) - 1
 
-        for i in range (n):
-            for j in range(i + 1, n):
-                smaller_wall = min(height[i], height[j])
-                contained = max(contained, (j - i) * smaller_wall) 
-
+        while l < r:
+            smaller_wall = min(height[l], height[r])
+            contained = max(contained, (r - l) * smaller_wall)  
+            
+            if height[l] < height[r]:
+                l += 1
+            else:
+                r -= 1
+            
         return contained
 
 s = Solution()
