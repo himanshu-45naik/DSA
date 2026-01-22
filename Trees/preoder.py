@@ -1,5 +1,5 @@
 # Binary Tree Preorder Traversal
-from typing import Optional
+from typing import Optional, List
 
 
 class TreeNode:
@@ -10,32 +10,37 @@ class TreeNode:
 
 
 class Solution:
-    def preorderTraversal(self, root: Optional[TreeNode]) -> list[int]:
-        """Given the root of a binary tree, return the preorder traversal of its nodes' values.
+    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        
+        res = []
 
-        Args:
-            root (Optional[TreeNode]): The root of the tree.
+        if not root:
+            return res
+        
+        def preorder(node, res):
+            if not root:
+                return None
 
-        Returns:
-            list[int]: The list of preoder traversed nodes.
-        """
+            res.append(node.val)
+            if node.left:
+                preorder(node.left, res)
+            if node.right:
+                preorder(node.right, res)
 
-        # Preorder Traversal --> Root Left Right
-        # We will first add the root to the node then the Left node and then the right node.
+            return res
 
-        if root == None:
-            return None
+        return preorder(root, res)
 
-        curr_root = root
-        result = []
+if __name__ == "__main__":
 
-        while curr_root:
+    s = Solution()
 
-            result.append(curr_root.val)
+    root = TreeNode(1)
+    root.left = TreeNode(2)
+    root.left.left = TreeNode(4)
+    root.left.right = TreeNode(5)
+    root.left.right.right = TreeNode(6)
+    root.right = TreeNode(3)
 
-            if curr_root.left:
-                self.preorderTraversal(curr_root.left)
-            if curr_root.right:
-                self.preorderTraversal(curr_root.right)
-
-        return result
+    print(s.preorderTraversal(root))
+    
