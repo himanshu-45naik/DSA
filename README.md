@@ -17,22 +17,22 @@ Each topic below includes a list of problems I’ve worked on (coming soon in su
 You can track your progress by checking off the topics I've completed in this repositry.
 
 ### 📌 Basics
-- [ ] Time and Space Complexity
-- [ ] Recursion
+- [x] Time and Space Complexity
+- [x] Recursion
 - [x] Bit Manipulation
 
 ### 📊 Arrays & Strings
 - [x] Arrays - Basics & 2D
-- [ ] Prefix Sum & Sliding Window
-- [ ] Sorting Techniques
-- [ ] Two Pointers
+- [x] Prefix Sum & Sliding Window
+- [x] Sorting Techniques
+- [x] Two Pointers
 - [ ] String Manipulation
 - [x] Hashing & Frequency Count
 
 ### 🔁 Searching & Sorting
 - [ ] Binary Search
 - [ ] Lower/Upper Bound
-- [ ] Sorting Algorithms
+- [x] Sorting Algorithms
 - [ ] Counting Sort / Radix Sort
 
 ### 🧮 Mathematics
@@ -42,28 +42,28 @@ You can track your progress by checking off the topics I've completed in this re
 - [ ] Combinatorics
 
 ### 🧵 Linked List
-- [ ] Singly Linked List
+- [x] Singly Linked List
 - [ ] Doubly Linked List
 - [ ] Cycle Detection
 - [ ] Reversals & Middle Elements
 
 ### 📐 Stack & Queue
 - [x] Stack Basics
-- [ ] Queue & Deque
-- [ ] Monotonic Stack / Queue
+- [x] Queue & Deque
+- [x] Monotonic Stack / Queue
 - [ ] Next Greater / Smaller Element
 
 ### 🌳 Trees
-- [ ] Binary Tree Basics
+- [x] Binary Tree Basics
 - [ ] Binary Search Tree
-- [ ] Tree Traversals (Inorder, Preorder, Postorder)
-- [ ] Lowest Common Ancestor (LCA)
+- [x] Tree Traversals (Inorder, Preorder, Postorder)
+- [x] Lowest Common Ancestor (LCA)
 - [ ] Diameter of Tree
-- [ ] Depth & Height Calculations
+- [x] Depth & Height Calculations
 
 ### 🌉 Graphs
-- [ ] Graph Representation
-- [ ] BFS & DFS
+- [x] Graph Representation
+- [x] BFS & DFS
 - [ ] Topological Sort
 - [ ] Dijkstra's Algorithm
 - [ ] Bellman-Ford
@@ -84,7 +84,7 @@ You can track your progress by checking off the topics I've completed in this re
 ### 🧩 Backtracking
 - [ ] N-Queens
 - [ ] Sudoku Solver
-- [x] Subsets & Permutations
+- [ ] Subsets & Permutations
 - [ ] Rat in a Maze
 
 ### ➰ Greedy
